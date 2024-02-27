@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tag -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Kamal is vCard, Resume Template and Personal portfolio bootstrap 4 html template." />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <!-- Title Of Site -->
+        <title>Kamal &ndash; Personal Portfolio Template</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+        <!-- *********** CSS Files *********** -->
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+        <!-- Main Style CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <!-- Template Color -->
+        <link rel="stylesheet" href="assets/css/color/default.css" id="optional-color" />
+    </head>
+
+    <body class="coming-soon-page">
+        <!-- Main Wrapper -->
+        <main id="main" class="main-wrapper p-0">
+            <!-- Container -->
+            <div class="container">
+                <!-- Coming Soon -->
+                <div class="d-table w-100">
+                    <div class="d-table-cell vh-100 align-middle text-center">
+                        <div class="coming-soon col-lg-8 col-12 m-auto">
+                            <!-- Logo -->
+                            <div class="logo navbar-brand p-0 m-0 w-100">
+                                <!-- Text Logo -->
+                                <a class="text-logo" href="#">Kamal</a>
+                                <!-- End Text Logo -->
+                                <!-- Image Logo -->
+                                <!-- <a href="#" class="logo-img"><img class="img-fluid" src="assets/images/logo.png" alt="logo" title="Logo" /></a> -->
+                                <!-- End Image Logo -->
+                            </div>
+                            <!-- End Logo -->
+                            <h2 class="title">We are coming soon!</h2>
+                            <p class="sub-title mb-4">Stay tuned for something amazing</p>
+                            <!-- Coming Soon Counter -->
+                            <div class="coming-soon-counter mb-3 mb-md-5 clearfix">
+                                <ul class="countdown counter timer d-flex flex-row justify-content-center clearfix">
+                                    <li class="d-flex flex-column align-items-center justify-content-center">
+                                        <span class="digit days" id="day"></span> 
+                                        <span class="smalltext">Day</span>
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center justify-content-center">
+                                        <span class="digit hours" id="hour"></span> 
+                                        <span class="smalltext">Hrs</span>
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center justify-content-center">
+                                        <span class="digit minutes" id="minute"></span> 
+                                        <span class="smalltext">Min</span>
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center justify-content-center">
+                                        <span class="digit seconds" id="second"></span> 
+                                        <span class="smalltext">Sec</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Coming Soon Counter -->
+                            <p class="font-15">Subscribe now to get the latest updates!</p>
+                            <!-- Coming Soon Form -->
+                            <div class="newsletter-form">
+                                <form action="#">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control text-white bg-transparent" placeholder="Email address" required />
+                                        <div class="input-group-append">
+                                            <button type="submit" class="input-group-text btn btn-primary" id="basic-addon2"><span>Notify Me</span></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- End Coming Soon Form -->
+                            <!-- Coming Soon Social -->
+                            <div class="coming-soon-social mt-4">
+                                <ul class="d-flex flex-row align-items-center justify-content-center text-center social-icon">
+                                    <li><a href="#" target="_blank" class="d-flex align-items-center justify-content-center" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" target="_blank" class="d-flex align-items-center justify-content-center" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" target="_blank" class="d-flex align-items-center justify-content-center" data-toggle="tooltip" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#" target="_blank" class="d-flex align-items-center justify-content-center" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#" target="_blank" class="d-flex align-items-center justify-content-center" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- End Coming Soon Social -->
+                            <p class="copyright mt-4 mt-md-5">&copy; 2023 Kamal &nbsp; - &nbsp; All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Coming Soon -->
+            </div>
+            <!-- End Container -->
+        </main>
+        <!-- End Main Wrapper -->
+
+
+        <!-- *********** Plugins JS Files *********** -->
+        <!-- Jquery -->
+        <script src="assets/js/jquery-3.5.1.js"></script>
+        <!-- Bootstrap -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Countdown Timer -->
+        <script>
+            (function ($) {
+                'use strict';
+                /* Timer Count Down */
+                var deadline = new Date("may 21, 2023 12:00:00").getTime();
+                var x = setInterval(function () {
+                    var currentTime = new Date().getTime();
+                    var t = deadline - currentTime;
+                    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+
+                    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+
+                    if (document.getElementsByClassName('countdown').length > 0) {
+                        document.getElementById("day").innerHTML = days;
+                        document.getElementById("hour").innerHTML = hours;
+                        document.getElementById("minute").innerHTML = minutes;
+                        document.getElementById("second").innerHTML = seconds;
+                        if (t < 0) {
+                            clearInterval(x);
+                            document.getElementById("time-up").innerHTML = "TIME UP";
+                            document.getElementById("day").innerHTML = '0';
+                            document.getElementById("hour").innerHTML = '0';
+                            document.getElementById("minute").innerHTML = '0';
+                            document.getElementById("second").innerHTML = '0';
+                        }
+                    }
+                }, 1000);
+            })(jQuery);
+        </script>
+
+    </body>
+</html>
+
